@@ -1,5 +1,13 @@
-Enumerating objects...
-Counting objects...
-Writing objects...
-To https://github.com/...
-   abc123..xyz456  main -> main
+name: Test CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Hello Datta! CI is working"
