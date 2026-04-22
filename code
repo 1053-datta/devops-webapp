@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Web App</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            margin: 15px auto;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DevOps Web Application</h1>
+    <p>CI/CD Pipeline Demo</p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>Status</h2>
+        <p id="status">App Running 🚀</p>
+        <button onclick="changeStatus()">Check Status</button>
+    </div>
+
+    <div class="card">
+        <h2>Build Version</h2>
+        <p>Version: 1.0.0</p>
+    </div>
+</section>
+
+<script>
+    function changeStatus() {
+        document.getElementById("status").innerText = "Deployment Successful ✅";
+    }
+</script>
+
+</body>
+</html>
